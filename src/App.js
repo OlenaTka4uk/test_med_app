@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './Components/Navbar/Navbar';
 import Landing_Page from './Components/Landing_Page/LandingPage';
 import InstantConsultation from './Components/InstantConsultationBooking/InstantConsultation';
+import FindDoctorSearchIC from './Components/FindDoctorSearch/FindDoctorSearch';
+import DoctorCardIC from './Components/DoctorCard/DoctorCard';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Routes>
             <Route path='/' element={<Landing_Page/>}></Route>
             <Route path="/instant-consultation" element={<InstantConsultation />} />
+            <Route path='/find-doctor-search' element={<FindDoctorSearchIC/>}></Route>
+            <Route path='/doctor-card' element={<DoctorCardIC/>}></Route>
           </Routes>
         </BrowserRouter>
     </div>
