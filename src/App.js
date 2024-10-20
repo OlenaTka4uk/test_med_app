@@ -6,6 +6,10 @@ import Landing_Page from './Components/Landing_Page/LandingPage';
 import InstantConsultation from './Components/InstantConsultationBooking/InstantConsultation';
 import FindDoctorSearchIC from './Components/FindDoctorSearch/FindDoctorSearch';
 import DoctorCardIC from './Components/DoctorCard/DoctorCard';
+import Login from './Components/Login/Login';
+import Sign_Up from './Components/Sign_up/Sign_up';
+import Notification from './Components/Notification/Notification';
+import ProfileForm from './Components/ProfileCard/ProfileCard';
 
 function App() {
   return (
@@ -16,9 +20,11 @@ function App() {
          <InstantConsultation/>
           <Routes>
             <Route path='/' element={<Landing_Page/>}></Route>
-            <Route path="/instant-consultation" element={<InstantConsultation />} />
-            <Route path='/find-doctor-search' element={<FindDoctorSearchIC/>}></Route>
-            <Route path='/doctor-card' element={<DoctorCardIC/>}></Route>
+            <Route path="/login" element={<Login />}/>
+             <Route path="/signup" element={<Sign_Up />}/>
+             <Route path="/instant-consultation" element={<InstantConsultation />} />
+             <Route path='/notification' element={<Notification/>}></Route>
+            <Route path='/profile-card' element={<ProfileForm/>}></Route>
           </Routes>
         </BrowserRouter>
     </div>
